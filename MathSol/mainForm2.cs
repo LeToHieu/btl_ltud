@@ -13,6 +13,7 @@ namespace MathSol
 {
     public partial class mainForm2 : Form
     {
+        private Button currentButton;
         public mainForm2()
         {
             InitializeComponent();
@@ -21,7 +22,6 @@ namespace MathSol
 
         private void hideSubMenu()
         {
-
             panelSubGeometry.Visible = false;
             panelSubArray.Visible = false;
         }
@@ -37,140 +37,19 @@ namespace MathSol
                 subMenu.Visible = false;
         }
 
-        private void btnMedia_Click(object sender, EventArgs e)
+        private void UpdateButtonColors(Button clickedButton)
         {
-            openChildForm(new Form1());
+            if (currentButton != null)
+            {
+                currentButton.BackColor = clickedButton.BackColor;
+                currentButton.ForeColor = clickedButton.ForeColor;
+                currentButton.FlatAppearance.MouseOverBackColor = clickedButton.FlatAppearance.MouseOverBackColor;
+                currentButton.FlatAppearance.MouseDownBackColor = clickedButton.FlatAppearance.MouseDownBackColor;
+            }
+            currentButton = clickedButton;
         }
 
-        #region MediaSubMenu
-        private void button2_Click(object sender, EventArgs e)
-        {
-            
-            //..
-            //your codes
-            //..
-            hideSubMenu();
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-            //..
-            //your codes
-            //..
-            hideSubMenu();
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-            //..
-            //your codes
-            //..
-            hideSubMenu();
-        }
-
-        private void button5_Click(object sender, EventArgs e)
-        {
-            //..
-            //your codes
-            //..
-            hideSubMenu();
-        }
-        #endregion
-
-        private void btnPlaylist_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        #region PlayListManagemetSubMenu
-        private void button8_Click(object sender, EventArgs e)
-        {
-            //..
-            //your codes
-            //..
-            hideSubMenu();
-        }
-
-        private void button7_Click(object sender, EventArgs e)
-        {
-            //..
-            //your codes
-            //..
-            hideSubMenu();
-        }
-
-        private void button6_Click(object sender, EventArgs e)
-        {
-            //..
-            //your codes
-            //..
-            hideSubMenu();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            //..
-            //your codes
-            //..
-            hideSubMenu();
-        }
-        #endregion
-
-        private void btnTools_Click(object sender, EventArgs e)
-        {
-            showSubMenu(panelSubArray);
-        }
-        #region ToolsSubMenu
-        private void button13_Click(object sender, EventArgs e)
-        {
-            //..
-            //your codes
-            //..
-            hideSubMenu();
-        }
-
-        private void button12_Click(object sender, EventArgs e)
-        {
-            //..
-            //your codes
-            //..
-            hideSubMenu();
-        }
-
-        private void button10_Click(object sender, EventArgs e)
-        {
-            //..
-            //your codes
-            //..
-            hideSubMenu();
-        }
-
-        private void button9_Click(object sender, EventArgs e)
-        {
-            //..
-            //your codes
-            //..
-            hideSubMenu();
-        }
-        #endregion
-
-        private void btnEqualizer_Click(object sender, EventArgs e)
-        {
-            
-            //..
-            //your codes
-            //..
-            hideSubMenu();
-        }
-
-        private void btnHelp_Click(object sender, EventArgs e)
-        {
-            
-            //..
-            //your codes
-            //..
-            hideSubMenu();
-        }
+       
         private void btnExit_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -207,19 +86,82 @@ namespace MathSol
             showSubMenu(panelSubGeometry);
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void btnCal_Click(object sender, EventArgs e)
+        {
+            Title.Text = btnCal.Text;
+            UpdateButtonColors(sender as Button);
+            openChildForm(new Form1());
+            btnCal.BackColor = System.Drawing.Color.White;
+            btnCal.ForeColor = System.Drawing.Color.Red;
+            btnCal.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            btnCal.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+        }
+
+        private void btnConverter_Click(object sender, EventArgs e)
+        {
+            Title.Text = btnConverter.Text;
+            UpdateButtonColors(sender as Button);
+            openChildForm(new Form2());
+            btnConverter.BackColor = System.Drawing.Color.White;
+            btnConverter.ForeColor = System.Drawing.Color.Red;
+            btnConverter.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            btnConverter.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+        }
+
+        private void btnArray_Click(object sender, EventArgs e)
+        {
+            showSubMenu(panelSubArray);
+        }
+
+        private void btnArrSort_Click(object sender, EventArgs e)
+        {
+            hideSubMenu();
+        }
+
+        private void btnArrAvg_Click(object sender, EventArgs e)
+        {
+            hideSubMenu();
+        }
+
+        private void btnSpaceArr_Click(object sender, EventArgs e)
+        {
+            hideSubMenu();
+        }
+
+        private void btnGeometry_Click(object sender, EventArgs e)
+        {
+            showSubMenu(panelSubGeometry);
+        }
+
+        private void btnPerimeter_Click(object sender, EventArgs e)
+        {
+            hideSubMenu();
+        }
+
+        private void btnArea_Click(object sender, EventArgs e)
+        {
+            hideSubMenu();
+        }
+
+        private void labelTitle_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void circularPictureBox2_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
         }
 
-        private void label1_Click_1(object sender, EventArgs e)
+        private void labelName_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-
+            ProfileForm ProfileForm = new ProfileForm();
+            ProfileForm.Show();
         }
     }
 }
