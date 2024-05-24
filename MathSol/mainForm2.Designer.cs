@@ -42,8 +42,9 @@
             this.panelTop = new System.Windows.Forms.Panel();
             this.labelName = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.Title = new System.Windows.Forms.Label();
             this.circularPictureBox2 = new MathSol.CircularPictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.Title = new System.Windows.Forms.Label();
             this.panelSideMenu.SuspendLayout();
             this.panelSubGeometry.SuspendLayout();
             this.panelSubArray.SuspendLayout();
@@ -52,8 +53,9 @@
             this.panelTop.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.circularPictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
-            // 
+            //
             // panelSideMenu
             // 
             this.panelSideMenu.AutoScroll = true;
@@ -315,6 +317,7 @@
             this.panelChildForm.Name = "panelChildForm";
             this.panelChildForm.Size = new System.Drawing.Size(684, 496);
             this.panelChildForm.TabIndex = 2;
+            this.panelChildForm.Click += new System.EventHandler(this.circularPictureBox2_Click);
             this.panelChildForm.Paint += new System.Windows.Forms.PaintEventHandler(this.panelChildForm_Paint);
             // 
             // panelTop
@@ -341,17 +344,40 @@
             this.labelName.TabIndex = 3;
             this.labelName.Text = "Hoàn";
             this.labelName.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.labelName.Click += new System.EventHandler(this.labelName_Click);
             // 
             // panel1
             // 
             this.panel1.Controls.Add(this.circularPictureBox2);
+            this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel1.Location = new System.Drawing.Point(621, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(63, 65);
             this.panel1.TabIndex = 1;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // circularPictureBox2
+            // 
+            this.circularPictureBox2.Cursor = System.Windows.Forms.Cursors.Default;
+            this.circularPictureBox2.Enabled = false;
+            this.circularPictureBox2.Image = global::MathSol.Properties.Resources.nd2;
+            this.circularPictureBox2.Location = new System.Drawing.Point(7, 12);
+            this.circularPictureBox2.Name = "circularPictureBox2";
+            this.circularPictureBox2.Size = new System.Drawing.Size(40, 40);
+            this.circularPictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.circularPictureBox2.TabIndex = 2;
+            this.circularPictureBox2.TabStop = false;
+            this.circularPictureBox2.Click += new System.EventHandler(this.circularPictureBox2_Click);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox2.Location = new System.Drawing.Point(7, 9);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(47, 43);
+            this.pictureBox2.TabIndex = 4;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.circularPictureBox2_Click);
             // 
             // Title
             // 
@@ -367,22 +393,9 @@
             this.Title.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.Title.Click += new System.EventHandler(this.labelTitle_Click);
             // 
-            // circularPictureBox2
-            // 
-            this.circularPictureBox2.Cursor = System.Windows.Forms.Cursors.Default;
-            this.circularPictureBox2.Enabled = false;
-            this.circularPictureBox2.Image = global::MathSol.Properties.Resources.nd2;
-            this.circularPictureBox2.Location = new System.Drawing.Point(7, 12);
-            this.circularPictureBox2.Name = "circularPictureBox2";
-            this.circularPictureBox2.Size = new System.Drawing.Size(40, 40);
-            this.circularPictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.circularPictureBox2.TabIndex = 2;
-            this.circularPictureBox2.TabStop = false;
-            this.circularPictureBox2.Click += new System.EventHandler(this.circularPictureBox2_Click);
-            // 
             // mainForm2
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(934, 561);
@@ -402,12 +415,16 @@
             this.panelTop.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.circularPictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
+        private string FullName = "";
+        private string UserName = "";
+        private string UserImage = "";
         private System.Windows.Forms.Panel panelSideMenu;
         private System.Windows.Forms.Button btnCal;
         private System.Windows.Forms.Panel panelSubArray;
@@ -430,6 +447,8 @@
         private System.Windows.Forms.Label labelName;
         private System.Windows.Forms.Label Title;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        
     }
 }
 

@@ -88,10 +88,17 @@ namespace MathSol
             string username = textBoxUsername.Text;
             string password = textBoxPassword.Text;
             
+            
             if (myUser.login(username, password))
             {
+                string image = myUser.Image;
+                string name = myUser.Name;
                 this.Hide();
-                mainForm2 mainForm = new mainForm2();
+                
+
+                mainForm2 mainForm = new mainForm2(name, username, image);
+                
+                
                 mainForm.FormClosed += (s, args) => this.Close();
                 mainForm.Show();
     

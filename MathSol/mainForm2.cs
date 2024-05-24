@@ -13,12 +13,20 @@ namespace MathSol
 {
     public partial class mainForm2 : Form
     {
+    
         private Button currentButton;
-        public mainForm2()
+        public mainForm2(string name,string username, string image)
         {
+            this.UserName = username;
+            this.UserImage = image;
+            this.FullName = name;
             InitializeComponent();
             hideSubMenu();
+            this.labelName.Text = name;
+            this.circularPictureBox2.Image = Image.FromFile("Resources/"+image);
         }
+
+       
 
         private void hideSubMenu()
         {
@@ -150,7 +158,8 @@ namespace MathSol
 
         private void circularPictureBox2_Click(object sender, EventArgs e)
         {
-            
+            ProfileForm ProfileForm = new ProfileForm(FullName, UserName, UserImage);
+            ProfileForm.Show();
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
@@ -158,10 +167,6 @@ namespace MathSol
 
         }
 
-        private void labelName_Click(object sender, EventArgs e)
-        {
-            ProfileForm ProfileForm = new ProfileForm();
-            ProfileForm.Show();
-        }
+        
     }
 }

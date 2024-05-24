@@ -12,9 +12,14 @@ namespace MathSol
 {
     public partial class ProfileForm : Form
     {
-        public ProfileForm()
+        public ProfileForm(string name, string username, string image)
         {
+            this.UserName = username;
+            this.FullName = name;
+            this.UserImage = image;
             InitializeComponent();
+            circularPictureBoxAva.Image = Image.FromFile("Resources/" + image);
+            labelName.Text = name;
         }
 
         private void LoginToUse_Click(object sender, EventArgs e)

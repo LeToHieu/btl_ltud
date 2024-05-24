@@ -19,7 +19,10 @@ namespace MathSol
         private string _image = "";
         private string filePath = "Resources/database.xlsx";
 
-
+        public string Name { get => _name; set => _name = value; }
+        public string Username { get => _username; set => _username = value; }
+        public string Password { get => _password; set => _password = value; }
+        public string Image { get => _image; set => _image = value; }
 
         public Users() { }
 

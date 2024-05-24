@@ -244,6 +244,10 @@ namespace MathSol
         }
 
         #endregion
+        private string FullName;
+        private string UserName;
+        private string UserImage;
+
         private System.Windows.Forms.Label ChangePass;
         private System.Windows.Forms.Label oldPass;
         private System.Windows.Forms.TextBox textBoxOldPass;
