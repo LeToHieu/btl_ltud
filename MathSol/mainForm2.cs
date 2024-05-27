@@ -15,15 +15,24 @@ namespace MathSol
     {
     
         private Button currentButton;
+
+        ProfileForm ProfileForm = null;
         public mainForm2(string name,string username, string image)
         {
-            this.UserName = username;
-            this.UserImage = image;
-            this.FullName = name;
+            
             InitializeComponent();
             hideSubMenu();
             this.labelName.Text = name;
-            this.circularPictureBox2.Image = Image.FromFile("Resources/"+image);
+            this.UserName = username;
+            this.FullName = name;
+
+            this.UserImage = image;
+            this.circularPictureBox2.ImageLocation= "Resources/" + image;
+            if (ProfileForm != null)
+            {
+                this.FormClosed += (s, args) => ProfileForm.Close();
+            }
+            openChildForm(new Form1());
         }
 
        
@@ -57,12 +66,35 @@ namespace MathSol
             currentButton = clickedButton;
         }
 
-       
         private void btnExit_Click(object sender, EventArgs e)
         {
             this.Hide();
             LoginForm LoginForm = new LoginForm();
+   
+            LoginForm.FormClosed += (s, args) => this.Close();
             LoginForm.Show();
+
+            if (ProfileForm != null)
+            {
+                ProfileForm.Close();
+                ProfileForm = null;
+                return;
+            }
+        }
+
+        
+        private void circularPictureBox2_Click(object sender, EventArgs e)
+        {
+            if (ProfileForm != null)
+            {
+                ProfileForm.Close();
+                ProfileForm = null;
+                
+            }
+            ProfileForm = new ProfileForm(FullName, UserName, UserImage, this);
+            ProfileForm.Show();
+
+
         }
 
         private Form activeForm = null;
@@ -155,18 +187,20 @@ namespace MathSol
         {
             
         }
-
-        private void circularPictureBox2_Click(object sender, EventArgs e)
-        {
-            ProfileForm ProfileForm = new ProfileForm(FullName, UserName, UserImage);
-            ProfileForm.Show();
-        }
+        
 
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
         }
 
-        
+        public void updateUser(string image)
+        {
+         
+            this.UserImage = image;
+            this.circularPictureBox2.ImageLocation = "Resources/" + image;
+        }
+
+
     }
 }

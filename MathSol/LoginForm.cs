@@ -12,6 +12,8 @@ namespace MathSol
 {
     public partial class LoginForm : Form
     {
+
+
         public LoginForm()
         {
             InitializeComponent();
@@ -82,6 +84,14 @@ namespace MathSol
         {
 
         }
+        private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == Convert.ToChar(Keys.Return))
+            {
+                buttonLogin_Click(sender, e);
+            }
+        }
+
 
         private void buttonLogin_Click(object sender, EventArgs e)
         {

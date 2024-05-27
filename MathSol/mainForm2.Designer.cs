@@ -55,7 +55,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.circularPictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
-            //
+            // 
             // panelSideMenu
             // 
             this.panelSideMenu.AutoScroll = true;
@@ -361,9 +361,9 @@
             this.circularPictureBox2.Cursor = System.Windows.Forms.Cursors.Default;
             this.circularPictureBox2.Enabled = false;
             this.circularPictureBox2.Image = global::MathSol.Properties.Resources.nd2;
-            this.circularPictureBox2.Location = new System.Drawing.Point(7, 12);
+            this.circularPictureBox2.Location = new System.Drawing.Point(7, 5);
             this.circularPictureBox2.Name = "circularPictureBox2";
-            this.circularPictureBox2.Size = new System.Drawing.Size(40, 40);
+            this.circularPictureBox2.Size = new System.Drawing.Size(47, 47);
             this.circularPictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.circularPictureBox2.TabIndex = 2;
             this.circularPictureBox2.TabStop = false;

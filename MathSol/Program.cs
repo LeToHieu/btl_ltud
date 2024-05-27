@@ -24,9 +24,9 @@ namespace MathSol
 
                     // Add column headers
                     worksheet.Cell(1, 1).Value = "name";
-                    worksheet.Cell(1, 1).Value = "userName";
-                    worksheet.Cell(1, 2).Value = "password";
-                    worksheet.Cell(1, 3).Value = "image";
+                    worksheet.Cell(1, 2).Value = "userName";
+                    worksheet.Cell(1, 3).Value = "password";
+                    worksheet.Cell(1, 4).Value = "image";
 
                     // Save the workbook
                     workbook.SaveAs(filePath);

@@ -8,6 +8,8 @@ using ClosedXML.Excel;
 using System.IO;
 using DocumentFormat.OpenXml.Drawing.Diagrams;
 using DocumentFormat.OpenXml.Wordprocessing;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
+using System.Xml.Linq;
 
 namespace MathSol
 {
@@ -32,16 +34,12 @@ namespace MathSol
             {
                 if (File.Exists(filePath))
                 {
-                    // Open the workbook
                     using (var workbook = new XLWorkbook(filePath))
                     {
-                        var worksheet = workbook.Worksheet(1); // Assuming data is in the first worksheet
-
-                        // Iterate through rows to find the matching
+                        var worksheet = workbook.Worksheet(1); 
 
                         foreach (var row in worksheet.RowsUsed())
                         {
-                            // Check if the name in the first column matches the search name
                             if (row.Cell(2).Value.ToString() == searchName)
                             {
                                 string name = row.Cell(1).Value.ToString();
@@ -57,9 +55,6 @@ namespace MathSol
                                 return true;
                             }
                         }
-
-
-                        // If no matching name is found
                         
                         throw new Exception($"Name '{searchName}' not found.");
 
@@ -75,6 +70,86 @@ namespace MathSol
             {
 
                 System.Console.WriteLine("Can't get username. Error:\n" + ex);
+                return false;
+            }
+        }
+
+        public bool updateUser(string searchName, string newPassword)
+        {
+            try
+            {
+                if (File.Exists(filePath))
+                {
+                    using (var workbook = new XLWorkbook(filePath))
+                    {
+                        var worksheet = workbook.Worksheet(1);
+                        int count = 1;
+                        foreach (var row in worksheet.RowsUsed())
+                        {
+                            if (row.Cell(2).Value.ToString() == searchName)
+                            {
+                                worksheet.Cell(count, 3).Value = newPassword;
+                                workbook.SaveAs(filePath);
+                                Console.WriteLine("Update successfully.");
+
+                                this._password = newPassword;
+                                return true;
+
+                            }
+                            count++;
+                        }
+                        throw new Exception($"Name '{searchName}' not found.");
+
+                    }
+                }
+                else
+                {
+                    throw new Exception("Cannot open file!");
+                }
+            }
+            catch (Exception ex)
+            {
+
+                System.Console.WriteLine("Can't update user. Error:\n" + ex);
+                return false;
+            }
+        }
+
+        public bool updateImage(string searchName , string image)
+        {
+            try
+            {
+                if (File.Exists(filePath))
+                {
+                    using (var workbook = new XLWorkbook(filePath))
+                    {
+                        var worksheet = workbook.Worksheet(1);
+                        int count = 1;
+                        foreach (var row in worksheet.RowsUsed())
+                        {
+                            if (row.Cell(2).Value.ToString() == searchName)
+                            {
+                                worksheet.Cell(count, 4).Value = image;
+                                workbook.SaveAs(filePath);
+                                Console.WriteLine("Update successfully.");
+
+                                this._image = image;
+                                return true;
+                            }
+                            count++;
+                        }
+                        throw new Exception($"Name '{searchName}' not found.");
+                    }
+                }
+                else
+                {
+                    throw new Exception("Cannot open file!");
+                }
+            }
+            catch (Exception ex)
+            {
+
+                System.Console.WriteLine("Can't update user. Error:\n" + ex);
                 return false;
             }
         }
