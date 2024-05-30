@@ -27,7 +27,10 @@ namespace MathSol
             this.FullName = name;
 
             this.UserImage = image;
-            this.circularPictureBox2.ImageLocation= "Resources/" + image;
+            if (image != "default.jpg")
+            {
+                this.circularPictureBox2.ImageLocation = "Resources/" + image;
+            }
             if (ProfileForm != null)
             {
                 this.FormClosed += (s, args) => ProfileForm.Close();

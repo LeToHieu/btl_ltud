@@ -24,7 +24,10 @@ namespace MathSol
             this.FullName = name;
             this.UserImage = image;
             InitializeComponent();
-            circularPictureBoxAva.ImageLocation = "Resources/" + image;
+            if (image!="default.jpg")
+            {
+                circularPictureBoxAva.ImageLocation = "Resources/" + image;
+            }
             labelName.Text = name;
             this.frm = frm;
         }

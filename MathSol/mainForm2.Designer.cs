@@ -361,7 +361,7 @@
             // 
             this.circularPictureBox2.Cursor = System.Windows.Forms.Cursors.Default;
             this.circularPictureBox2.Enabled = false;
-            this.circularPictureBox2.Image = global::MathSol.Properties.Resources.nd2;
+            this.circularPictureBox2.Image = global::MathSol.Properties.Resources._default;
             this.circularPictureBox2.Location = new System.Drawing.Point(7, 5);
             this.circularPictureBox2.Name = "circularPictureBox2";
             this.circularPictureBox2.Size = new System.Drawing.Size(47, 47);

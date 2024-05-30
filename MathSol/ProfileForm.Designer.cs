@@ -80,7 +80,7 @@ namespace MathSol
             this.textBoxOldPass.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxOldPass.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.textBoxOldPass.Location = new System.Drawing.Point(65, 339);
-            this.textBoxOldPass.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxOldPass.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxOldPass.Name = "textBoxOldPass";
             this.textBoxOldPass.Size = new System.Drawing.Size(306, 25);
             this.textBoxOldPass.TabIndex = 4;
@@ -93,7 +93,7 @@ namespace MathSol
             this.textBoxNewPass.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxNewPass.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.textBoxNewPass.Location = new System.Drawing.Point(65, 407);
-            this.textBoxNewPass.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxNewPass.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxNewPass.Name = "textBoxNewPass";
             this.textBoxNewPass.Size = new System.Drawing.Size(306, 25);
             this.textBoxNewPass.TabIndex = 6;
@@ -147,7 +147,7 @@ namespace MathSol
             this.Error.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.Error.Image = global::MathSol.Properties.Resources.icons8_error_90;
             this.Error.Location = new System.Drawing.Point(75, 510);
-            this.Error.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Error.Margin = new System.Windows.Forms.Padding(2);
             this.Error.Name = "Error";
             this.Error.Size = new System.Drawing.Size(25, 17);
             this.Error.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -163,7 +163,7 @@ namespace MathSol
             this.textBoxNewPassConf.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxNewPassConf.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.textBoxNewPassConf.Location = new System.Drawing.Point(65, 474);
-            this.textBoxNewPassConf.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxNewPassConf.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxNewPassConf.Name = "textBoxNewPassConf";
             this.textBoxNewPassConf.Size = new System.Drawing.Size(306, 25);
             this.textBoxNewPassConf.TabIndex = 7;
@@ -187,7 +187,7 @@ namespace MathSol
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(36)))), ((int)(((byte)(36)))));
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(439, 131);
             this.panel1.TabIndex = 21;
@@ -221,9 +221,9 @@ namespace MathSol
             // circularPictureBoxAva
             // 
             this.circularPictureBoxAva.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.circularPictureBoxAva.Image = global::MathSol.Properties.Resources.nd2;
+            this.circularPictureBoxAva.Image = global::MathSol.Properties.Resources.default1;
             this.circularPictureBoxAva.Location = new System.Drawing.Point(136, 29);
-            this.circularPictureBoxAva.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.circularPictureBoxAva.Margin = new System.Windows.Forms.Padding(2);
             this.circularPictureBoxAva.Name = "circularPictureBoxAva";
             this.circularPictureBoxAva.Size = new System.Drawing.Size(167, 160);
             this.circularPictureBoxAva.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -235,7 +235,7 @@ namespace MathSol
             this.circularPictureBox3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.circularPictureBox3.BackColor = System.Drawing.Color.Gainsboro;
             this.circularPictureBox3.Location = new System.Drawing.Point(134, 28);
-            this.circularPictureBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.circularPictureBox3.Margin = new System.Windows.Forms.Padding(2);
             this.circularPictureBox3.Name = "circularPictureBox3";
             this.circularPictureBox3.Size = new System.Drawing.Size(171, 164);
             this.circularPictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -247,7 +247,7 @@ namespace MathSol
             this.Check.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.Check.Image = global::MathSol.Properties.Resources.icons8_error_90;
             this.Check.Location = new System.Drawing.Point(74, 511);
-            this.Check.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Check.Margin = new System.Windows.Forms.Padding(2);
             this.Check.Name = "Check";
             this.Check.Size = new System.Drawing.Size(25, 17);
             this.Check.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
