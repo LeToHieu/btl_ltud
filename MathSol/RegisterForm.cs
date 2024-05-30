@@ -47,6 +47,8 @@ namespace MathSol
 
         private void buttonRegister_Click(object sender, EventArgs e)
         {
+            Error.Hide();
+            PasswordError.Hide();
             Users users = new Users();
             string name = textBoxFullName.Text;
             string username = textBoxUsername.Text;
@@ -64,6 +66,18 @@ namespace MathSol
                 {
                     this.Close();
                 }
+                else
+                {
+                    Error.Show();
+                    PasswordError.Text = "Tài khoản đã tồn tại";
+                    PasswordError.Show();
+                }
+            }
+            else
+            {
+                Error.Show();
+                PasswordError.Text = "Mật khẩu không trùng khớp";
+                PasswordError.Show();
             }
 
         }

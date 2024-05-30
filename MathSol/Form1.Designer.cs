@@ -58,8 +58,8 @@ namespace MathSol
             this.inputText = new System.Windows.Forms.TextBox();
             this.outText = new System.Windows.Forms.TextBox();
             this.buttonPow = new System.Windows.Forms.Button();
-            this.buttonPi = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
+            this.pi = new System.Windows.Forms.Button();
+            this.ans = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button7
@@ -71,10 +71,10 @@ namespace MathSol
             this.button7.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(36)))), ((int)(((byte)(36)))));
-            this.button7.Location = new System.Drawing.Point(165, 355);
-            this.button7.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.button7.Location = new System.Drawing.Point(82, 184);
+            this.button7.Margin = new System.Windows.Forms.Padding(2);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(104, 56);
+            this.button7.Size = new System.Drawing.Size(52, 29);
             this.button7.TabIndex = 0;
             this.button7.Text = "7";
             this.button7.UseVisualStyleBackColor = false;
@@ -89,10 +89,10 @@ namespace MathSol
             this.button8.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(36)))), ((int)(((byte)(36)))));
-            this.button8.Location = new System.Drawing.Point(278, 355);
-            this.button8.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.button8.Location = new System.Drawing.Point(139, 184);
+            this.button8.Margin = new System.Windows.Forms.Padding(2);
             this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(104, 56);
+            this.button8.Size = new System.Drawing.Size(52, 29);
             this.button8.TabIndex = 1;
             this.button8.Text = "8";
             this.button8.UseVisualStyleBackColor = false;
@@ -107,10 +107,10 @@ namespace MathSol
             this.button9.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(36)))), ((int)(((byte)(36)))));
-            this.button9.Location = new System.Drawing.Point(390, 355);
-            this.button9.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.button9.Location = new System.Drawing.Point(195, 184);
+            this.button9.Margin = new System.Windows.Forms.Padding(2);
             this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(104, 56);
+            this.button9.Size = new System.Drawing.Size(52, 29);
             this.button9.TabIndex = 2;
             this.button9.Text = "9";
             this.button9.UseVisualStyleBackColor = false;
@@ -125,10 +125,10 @@ namespace MathSol
             this.button6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(36)))), ((int)(((byte)(36)))));
-            this.button6.Location = new System.Drawing.Point(388, 420);
-            this.button6.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.button6.Location = new System.Drawing.Point(194, 219);
+            this.button6.Margin = new System.Windows.Forms.Padding(2);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(104, 56);
+            this.button6.Size = new System.Drawing.Size(52, 29);
             this.button6.TabIndex = 3;
             this.button6.Text = "6";
             this.button6.UseVisualStyleBackColor = false;
@@ -143,10 +143,10 @@ namespace MathSol
             this.button5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(36)))), ((int)(((byte)(36)))));
-            this.button5.Location = new System.Drawing.Point(276, 420);
-            this.button5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.button5.Location = new System.Drawing.Point(138, 219);
+            this.button5.Margin = new System.Windows.Forms.Padding(2);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(104, 56);
+            this.button5.Size = new System.Drawing.Size(52, 29);
             this.button5.TabIndex = 4;
             this.button5.Text = "5";
             this.button5.UseVisualStyleBackColor = false;
@@ -161,10 +161,10 @@ namespace MathSol
             this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(36)))), ((int)(((byte)(36)))));
-            this.button4.Location = new System.Drawing.Point(165, 420);
-            this.button4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.button4.Location = new System.Drawing.Point(82, 219);
+            this.button4.Margin = new System.Windows.Forms.Padding(2);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(104, 56);
+            this.button4.Size = new System.Drawing.Size(52, 29);
             this.button4.TabIndex = 5;
             this.button4.Text = "4";
             this.button4.UseVisualStyleBackColor = false;
@@ -179,10 +179,10 @@ namespace MathSol
             this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(36)))), ((int)(((byte)(36)))));
-            this.button2.Location = new System.Drawing.Point(276, 486);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.button2.Location = new System.Drawing.Point(138, 253);
+            this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(104, 56);
+            this.button2.Size = new System.Drawing.Size(52, 29);
             this.button2.TabIndex = 7;
             this.button2.Text = "2";
             this.button2.UseVisualStyleBackColor = false;
@@ -197,10 +197,10 @@ namespace MathSol
             this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(36)))), ((int)(((byte)(36)))));
-            this.button1.Location = new System.Drawing.Point(165, 486);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.button1.Location = new System.Drawing.Point(82, 253);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(104, 56);
+            this.button1.Size = new System.Drawing.Size(52, 29);
             this.button1.TabIndex = 8;
             this.button1.Text = "1";
             this.button1.UseVisualStyleBackColor = false;
@@ -215,10 +215,10 @@ namespace MathSol
             this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(36)))), ((int)(((byte)(36)))));
-            this.button3.Location = new System.Drawing.Point(390, 488);
-            this.button3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.button3.Location = new System.Drawing.Point(195, 254);
+            this.button3.Margin = new System.Windows.Forms.Padding(2);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(104, 55);
+            this.button3.Size = new System.Drawing.Size(52, 28);
             this.button3.TabIndex = 9;
             this.button3.Text = "3";
             this.button3.UseVisualStyleBackColor = false;
@@ -233,10 +233,10 @@ namespace MathSol
             this.button0.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.button0.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button0.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(36)))), ((int)(((byte)(36)))));
-            this.button0.Location = new System.Drawing.Point(165, 552);
-            this.button0.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.button0.Location = new System.Drawing.Point(82, 287);
+            this.button0.Margin = new System.Windows.Forms.Padding(2);
             this.button0.Name = "button0";
-            this.button0.Size = new System.Drawing.Size(104, 56);
+            this.button0.Size = new System.Drawing.Size(52, 29);
             this.button0.TabIndex = 10;
             this.button0.Text = "0";
             this.button0.UseVisualStyleBackColor = false;
@@ -251,10 +251,10 @@ namespace MathSol
             this.buttonDot.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.buttonDot.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonDot.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(36)))), ((int)(((byte)(36)))));
-            this.buttonDot.Location = new System.Drawing.Point(278, 552);
-            this.buttonDot.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.buttonDot.Location = new System.Drawing.Point(139, 287);
+            this.buttonDot.Margin = new System.Windows.Forms.Padding(2);
             this.buttonDot.Name = "buttonDot";
-            this.buttonDot.Size = new System.Drawing.Size(104, 56);
+            this.buttonDot.Size = new System.Drawing.Size(52, 29);
             this.buttonDot.TabIndex = 11;
             this.buttonDot.Text = ".";
             this.buttonDot.UseVisualStyleBackColor = false;
@@ -269,10 +269,10 @@ namespace MathSol
             this.buttonDel.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.buttonDel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonDel.ForeColor = System.Drawing.Color.White;
-            this.buttonDel.Location = new System.Drawing.Point(502, 355);
-            this.buttonDel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.buttonDel.Location = new System.Drawing.Point(250, 184);
+            this.buttonDel.Margin = new System.Windows.Forms.Padding(2);
             this.buttonDel.Name = "buttonDel";
-            this.buttonDel.Size = new System.Drawing.Size(104, 56);
+            this.buttonDel.Size = new System.Drawing.Size(52, 29);
             this.buttonDel.TabIndex = 12;
             this.buttonDel.Text = "DEL";
             this.buttonDel.UseVisualStyleBackColor = false;
@@ -287,10 +287,10 @@ namespace MathSol
             this.buttonAC.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.buttonAC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonAC.ForeColor = System.Drawing.Color.White;
-            this.buttonAC.Location = new System.Drawing.Point(614, 355);
-            this.buttonAC.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.buttonAC.Location = new System.Drawing.Point(307, 184);
+            this.buttonAC.Margin = new System.Windows.Forms.Padding(2);
             this.buttonAC.Name = "buttonAC";
-            this.buttonAC.Size = new System.Drawing.Size(104, 56);
+            this.buttonAC.Size = new System.Drawing.Size(52, 29);
             this.buttonAC.TabIndex = 13;
             this.buttonAC.Text = "AC";
             this.buttonAC.UseVisualStyleBackColor = false;
@@ -305,10 +305,10 @@ namespace MathSol
             this.buttonMul.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.buttonMul.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonMul.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(36)))), ((int)(((byte)(36)))));
-            this.buttonMul.Location = new System.Drawing.Point(501, 420);
-            this.buttonMul.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.buttonMul.Location = new System.Drawing.Point(250, 219);
+            this.buttonMul.Margin = new System.Windows.Forms.Padding(2);
             this.buttonMul.Name = "buttonMul";
-            this.buttonMul.Size = new System.Drawing.Size(104, 56);
+            this.buttonMul.Size = new System.Drawing.Size(52, 29);
             this.buttonMul.TabIndex = 14;
             this.buttonMul.Text = "*";
             this.buttonMul.UseVisualStyleBackColor = false;
@@ -323,10 +323,10 @@ namespace MathSol
             this.buttonSub.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.buttonSub.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonSub.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(36)))), ((int)(((byte)(36)))));
-            this.buttonSub.Location = new System.Drawing.Point(614, 420);
-            this.buttonSub.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.buttonSub.Location = new System.Drawing.Point(307, 219);
+            this.buttonSub.Margin = new System.Windows.Forms.Padding(2);
             this.buttonSub.Name = "buttonSub";
-            this.buttonSub.Size = new System.Drawing.Size(104, 56);
+            this.buttonSub.Size = new System.Drawing.Size(52, 29);
             this.buttonSub.TabIndex = 15;
             this.buttonSub.Text = "/";
             this.buttonSub.UseVisualStyleBackColor = false;
@@ -341,10 +341,10 @@ namespace MathSol
             this.buttonPlus.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.buttonPlus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonPlus.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(36)))), ((int)(((byte)(36)))));
-            this.buttonPlus.Location = new System.Drawing.Point(502, 488);
-            this.buttonPlus.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.buttonPlus.Location = new System.Drawing.Point(251, 254);
+            this.buttonPlus.Margin = new System.Windows.Forms.Padding(2);
             this.buttonPlus.Name = "buttonPlus";
-            this.buttonPlus.Size = new System.Drawing.Size(104, 56);
+            this.buttonPlus.Size = new System.Drawing.Size(52, 29);
             this.buttonPlus.TabIndex = 16;
             this.buttonPlus.Text = "+";
             this.buttonPlus.UseVisualStyleBackColor = false;
@@ -359,10 +359,10 @@ namespace MathSol
             this.buttonMin.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.buttonMin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonMin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(36)))), ((int)(((byte)(36)))));
-            this.buttonMin.Location = new System.Drawing.Point(614, 488);
-            this.buttonMin.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.buttonMin.Location = new System.Drawing.Point(307, 254);
+            this.buttonMin.Margin = new System.Windows.Forms.Padding(2);
             this.buttonMin.Name = "buttonMin";
-            this.buttonMin.Size = new System.Drawing.Size(104, 56);
+            this.buttonMin.Size = new System.Drawing.Size(52, 29);
             this.buttonMin.TabIndex = 17;
             this.buttonMin.Text = "-";
             this.buttonMin.UseVisualStyleBackColor = false;
@@ -377,10 +377,10 @@ namespace MathSol
             this.buttonCal.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.buttonCal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonCal.ForeColor = System.Drawing.Color.White;
-            this.buttonCal.Location = new System.Drawing.Point(615, 553);
-            this.buttonCal.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.buttonCal.Location = new System.Drawing.Point(308, 288);
+            this.buttonCal.Margin = new System.Windows.Forms.Padding(2);
             this.buttonCal.Name = "buttonCal";
-            this.buttonCal.Size = new System.Drawing.Size(104, 56);
+            this.buttonCal.Size = new System.Drawing.Size(52, 29);
             this.buttonCal.TabIndex = 18;
             this.buttonCal.Text = "CAL";
             this.buttonCal.UseVisualStyleBackColor = false;
@@ -395,10 +395,10 @@ namespace MathSol
             this.buttonOpen.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.buttonOpen.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonOpen.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(36)))), ((int)(((byte)(36)))));
-            this.buttonOpen.Location = new System.Drawing.Point(390, 552);
-            this.buttonOpen.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.buttonOpen.Location = new System.Drawing.Point(195, 287);
+            this.buttonOpen.Margin = new System.Windows.Forms.Padding(2);
             this.buttonOpen.Name = "buttonOpen";
-            this.buttonOpen.Size = new System.Drawing.Size(104, 56);
+            this.buttonOpen.Size = new System.Drawing.Size(52, 29);
             this.buttonOpen.TabIndex = 19;
             this.buttonOpen.Text = "(";
             this.buttonOpen.UseVisualStyleBackColor = false;
@@ -413,10 +413,10 @@ namespace MathSol
             this.buttonClose.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.buttonClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonClose.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(36)))), ((int)(((byte)(36)))));
-            this.buttonClose.Location = new System.Drawing.Point(502, 553);
-            this.buttonClose.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.buttonClose.Location = new System.Drawing.Point(251, 288);
+            this.buttonClose.Margin = new System.Windows.Forms.Padding(2);
             this.buttonClose.Name = "buttonClose";
-            this.buttonClose.Size = new System.Drawing.Size(104, 56);
+            this.buttonClose.Size = new System.Drawing.Size(52, 29);
             this.buttonClose.TabIndex = 20;
             this.buttonClose.Text = ")";
             this.buttonClose.UseVisualStyleBackColor = false;
@@ -431,10 +431,10 @@ namespace MathSol
             this.buttonPow3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.buttonPow3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonPow3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(36)))), ((int)(((byte)(36)))));
-            this.buttonPow3.Location = new System.Drawing.Point(501, 289);
-            this.buttonPow3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.buttonPow3.Location = new System.Drawing.Point(195, 150);
+            this.buttonPow3.Margin = new System.Windows.Forms.Padding(2);
             this.buttonPow3.Name = "buttonPow3";
-            this.buttonPow3.Size = new System.Drawing.Size(104, 56);
+            this.buttonPow3.Size = new System.Drawing.Size(52, 29);
             this.buttonPow3.TabIndex = 28;
             this.buttonPow3.Text = "X³";
             this.buttonPow3.UseVisualStyleBackColor = false;
@@ -449,10 +449,10 @@ namespace MathSol
             this.buttonPow2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.buttonPow2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonPow2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(36)))), ((int)(((byte)(36)))));
-            this.buttonPow2.Location = new System.Drawing.Point(388, 289);
-            this.buttonPow2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.buttonPow2.Location = new System.Drawing.Point(139, 150);
+            this.buttonPow2.Margin = new System.Windows.Forms.Padding(2);
             this.buttonPow2.Name = "buttonPow2";
-            this.buttonPow2.Size = new System.Drawing.Size(104, 56);
+            this.buttonPow2.Size = new System.Drawing.Size(52, 29);
             this.buttonPow2.TabIndex = 27;
             this.buttonPow2.Text = "X²";
             this.buttonPow2.UseVisualStyleBackColor = false;
@@ -465,11 +465,11 @@ namespace MathSol
             this.inputText.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.inputText.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.inputText.ForeColor = System.Drawing.Color.Gainsboro;
-            this.inputText.Location = new System.Drawing.Point(165, 234);
-            this.inputText.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.inputText.Location = new System.Drawing.Point(82, 122);
+            this.inputText.Margin = new System.Windows.Forms.Padding(2);
             this.inputText.Multiline = true;
             this.inputText.Name = "inputText";
-            this.inputText.Size = new System.Drawing.Size(552, 45);
+            this.inputText.Size = new System.Drawing.Size(276, 24);
             this.inputText.TabIndex = 30;
             this.inputText.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
@@ -480,11 +480,11 @@ namespace MathSol
             this.outText.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.outText.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.outText.ForeColor = System.Drawing.Color.White;
-            this.outText.Location = new System.Drawing.Point(165, 73);
-            this.outText.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.outText.Location = new System.Drawing.Point(82, 38);
+            this.outText.Margin = new System.Windows.Forms.Padding(2);
             this.outText.Multiline = true;
             this.outText.Name = "outText";
-            this.outText.Size = new System.Drawing.Size(552, 166);
+            this.outText.Size = new System.Drawing.Size(276, 86);
             this.outText.TabIndex = 31;
             // 
             // buttonPow
@@ -496,59 +496,60 @@ namespace MathSol
             this.buttonPow.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.buttonPow.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonPow.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(36)))), ((int)(((byte)(36)))));
-            this.buttonPow.Location = new System.Drawing.Point(276, 289);
-            this.buttonPow.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.buttonPow.Location = new System.Drawing.Point(82, 150);
+            this.buttonPow.Margin = new System.Windows.Forms.Padding(2);
             this.buttonPow.Name = "buttonPow";
-            this.buttonPow.Size = new System.Drawing.Size(104, 56);
+            this.buttonPow.Size = new System.Drawing.Size(52, 29);
             this.buttonPow.TabIndex = 33;
             this.buttonPow.Text = "^";
             this.buttonPow.UseVisualStyleBackColor = false;
             this.buttonPow.Click += new System.EventHandler(this.buttonPow_Click);
             // 
-            // buttonPi
+            // pi
             // 
-            this.buttonPi.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.buttonPi.BackColor = System.Drawing.Color.White;
-            this.buttonPi.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.buttonPi.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.buttonPi.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.buttonPi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonPi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(36)))), ((int)(((byte)(36)))));
-            this.buttonPi.Location = new System.Drawing.Point(164, 289);
-            this.buttonPi.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.buttonPi.Name = "buttonPi";
-            this.buttonPi.Size = new System.Drawing.Size(104, 56);
-            this.buttonPi.TabIndex = 34;
-            this.buttonPi.Text = "Pi";
-            this.buttonPi.UseVisualStyleBackColor = false;
-            this.buttonPi.Click += new System.EventHandler(this.buttonPi_Click);
+            this.pi.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.pi.BackColor = System.Drawing.Color.White;
+            this.pi.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.pi.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.pi.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.pi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.pi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(36)))), ((int)(((byte)(36)))));
+            this.pi.Location = new System.Drawing.Point(250, 151);
+            this.pi.Margin = new System.Windows.Forms.Padding(2);
+            this.pi.Name = "pi";
+            this.pi.Size = new System.Drawing.Size(52, 29);
+            this.pi.TabIndex = 34;
+            this.pi.Text = "π";
+            this.pi.UseVisualStyleBackColor = false;
+            this.pi.Click += new System.EventHandler(this.buttonPi_Click);
             // 
-            // button10
+            // ans
             // 
-            this.button10.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.button10.BackColor = System.Drawing.Color.White;
-            this.button10.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.button10.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.button10.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(36)))), ((int)(((byte)(36)))));
-            this.button10.Location = new System.Drawing.Point(614, 289);
-            this.button10.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(104, 56);
-            this.button10.TabIndex = 35;
-            this.button10.Text = "ANS";
-            this.button10.UseVisualStyleBackColor = false;
+            this.ans.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.ans.BackColor = System.Drawing.Color.White;
+            this.ans.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.ans.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.ans.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.ans.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ans.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(36)))), ((int)(((byte)(36)))));
+            this.ans.Location = new System.Drawing.Point(306, 151);
+            this.ans.Margin = new System.Windows.Forms.Padding(2);
+            this.ans.Name = "ans";
+            this.ans.Size = new System.Drawing.Size(52, 29);
+            this.ans.TabIndex = 35;
+            this.ans.Text = "ANS";
+            this.ans.UseVisualStyleBackColor = false;
+            this.ans.Click += new System.EventHandler(this.buttonANS_Click);
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(885, 816);
-            this.Controls.Add(this.button10);
-            this.Controls.Add(this.buttonPi);
+            this.ClientSize = new System.Drawing.Size(442, 424);
+            this.Controls.Add(this.ans);
+            this.Controls.Add(this.pi);
             this.Controls.Add(this.buttonPow);
             this.Controls.Add(this.outText);
             this.Controls.Add(this.inputText);
@@ -574,7 +575,7 @@ namespace MathSol
             this.Controls.Add(this.button9);
             this.Controls.Add(this.button8);
             this.Controls.Add(this.button7);
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -609,7 +610,7 @@ namespace MathSol
         private TextBox outText;
         private Button buttonMin;
         private Button buttonPow;
-        private Button buttonPi;
-        private Button button10;
+        private Button pi;
+        private Button ans;
     }
 }

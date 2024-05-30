@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.textBoxLength = new System.Windows.Forms.TextBox();
             this.comboBoxLength = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -44,8 +43,6 @@
             this.textBoxWeight = new System.Windows.Forms.TextBox();
             this.textBoxWeight2 = new System.Windows.Forms.TextBox();
             this.comboBoxWeight2 = new System.Windows.Forms.ComboBox();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.panel8 = new System.Windows.Forms.Panel();
             this.buttonConvert3 = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
@@ -53,8 +50,6 @@
             this.textBoxVolume = new System.Windows.Forms.TextBox();
             this.comboBoxVolume2 = new System.Windows.Forms.ComboBox();
             this.textBoxVolume2 = new System.Windows.Forms.TextBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.panel7 = new System.Windows.Forms.Panel();
             this.buttonConvert2 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
@@ -62,25 +57,30 @@
             this.textBoxArea = new System.Windows.Forms.TextBox();
             this.comboBoxArea2 = new System.Windows.Forms.ComboBox();
             this.textBoxArea2 = new System.Windows.Forms.TextBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel6 = new System.Windows.Forms.Panel();
             this.buttonConvert1 = new System.Windows.Forms.Button();
             this.comboBoxLength2 = new System.Windows.Forms.ComboBox();
             this.textBoxLength2 = new System.Windows.Forms.TextBox();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel5.SuspendLayout();
             this.panel9.SuspendLayout();
+            this.panel8.SuspendLayout();
+            this.panel7.SuspendLayout();
+            this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            this.panel8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            this.panel7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            this.panel6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
@@ -107,6 +107,7 @@
             this.textBoxLength.Size = new System.Drawing.Size(186, 31);
             this.textBoxLength.TabIndex = 7;
             this.textBoxLength.Text = "Nhập giá trị...";
+            this.textBoxLength.TextChanged += new System.EventHandler(this.textBoxLength_TextChanged);
             this.textBoxLength.Enter += new System.EventHandler(this.textBoxLength_Enter);
             this.textBoxLength.Leave += new System.EventHandler(this.textBoxLength_Leave);
             // 
@@ -143,6 +144,7 @@
             this.label1.Size = new System.Drawing.Size(292, 33);
             this.label1.TabIndex = 5;
             this.label1.Text = "Đổi đơn vị đo độ dài";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // panel1
             // 
@@ -152,6 +154,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(70, 805);
             this.panel1.TabIndex = 10;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // panel2
             // 
@@ -161,6 +164,7 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(70, 805);
             this.panel2.TabIndex = 18;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint_1);
             // 
             // panel3
             // 
@@ -170,6 +174,7 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(904, 30);
             this.panel3.TabIndex = 17;
+            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
             // panel4
             // 
@@ -179,6 +184,7 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(904, 30);
             this.panel4.TabIndex = 16;
+            this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
             // 
             // panel5
             // 
@@ -193,6 +199,7 @@
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(904, 745);
             this.panel5.TabIndex = 19;
+            this.panel5.Paint += new System.Windows.Forms.PaintEventHandler(this.panel5_Paint);
             // 
             // panel9
             // 
@@ -209,6 +216,7 @@
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(904, 150);
             this.panel9.TabIndex = 42;
+            this.panel9.Paint += new System.Windows.Forms.PaintEventHandler(this.panel9_Paint);
             // 
             // buttonConvert4
             // 
@@ -236,6 +244,7 @@
             this.label4.Size = new System.Drawing.Size(350, 33);
             this.label4.TabIndex = 31;
             this.label4.Text = "Đổi đơn vị đo khối lượng";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // comboBoxWeight
             // 
@@ -272,6 +281,7 @@
             this.textBoxWeight.Size = new System.Drawing.Size(186, 31);
             this.textBoxWeight.TabIndex = 33;
             this.textBoxWeight.Text = "Nhập giá trị...";
+            this.textBoxWeight.TextChanged += new System.EventHandler(this.textBoxWeight_TextChanged);
             this.textBoxWeight.Enter += new System.EventHandler(this.textBoxWeight_Enter);
             this.textBoxWeight.Leave += new System.EventHandler(this.textBoxWeight_Leave);
             // 
@@ -288,6 +298,7 @@
             this.textBoxWeight2.ReadOnly = true;
             this.textBoxWeight2.Size = new System.Drawing.Size(190, 31);
             this.textBoxWeight2.TabIndex = 36;
+            this.textBoxWeight2.TextChanged += new System.EventHandler(this.textBoxWeight2_TextChanged);
             // 
             // comboBoxWeight2
             // 
@@ -346,6 +357,7 @@
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(904, 150);
             this.panel8.TabIndex = 41;
+            this.panel8.Paint += new System.Windows.Forms.PaintEventHandler(this.panel8_Paint);
             // 
             // buttonConvert3
             // 
@@ -373,6 +385,7 @@
             this.label3.Size = new System.Drawing.Size(309, 33);
             this.label3.TabIndex = 23;
             this.label3.Text = "Đổi đơn vị đo thể tích";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // comboBoxVolume
             // 
@@ -411,6 +424,7 @@
             this.textBoxVolume.Size = new System.Drawing.Size(186, 31);
             this.textBoxVolume.TabIndex = 25;
             this.textBoxVolume.Text = "Nhập giá trị...";
+            this.textBoxVolume.TextChanged += new System.EventHandler(this.textBoxVolume_TextChanged);
             this.textBoxVolume.Enter += new System.EventHandler(this.textBoxVolume_Enter);
             this.textBoxVolume.Leave += new System.EventHandler(this.textBoxVolume_Leave);
             // 
@@ -487,6 +501,7 @@
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(904, 150);
             this.panel7.TabIndex = 40;
+            this.panel7.Paint += new System.Windows.Forms.PaintEventHandler(this.panel7_Paint);
             // 
             // buttonConvert2
             // 
@@ -551,6 +566,7 @@
             this.textBoxArea.Size = new System.Drawing.Size(186, 31);
             this.textBoxArea.TabIndex = 17;
             this.textBoxArea.Text = "Nhập giá trị...";
+            this.textBoxArea.TextChanged += new System.EventHandler(this.textBoxArea_TextChanged);
             this.textBoxArea.Enter += new System.EventHandler(this.textBoxArea_Enter);
             this.textBoxArea.Leave += new System.EventHandler(this.textBoxArea_Leave);
             // 
@@ -625,6 +641,7 @@
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(904, 227);
             this.panel6.TabIndex = 39;
+            this.panel6.Paint += new System.Windows.Forms.PaintEventHandler(this.panel6_Paint);
             // 
             // buttonConvert1
             // 
@@ -661,6 +678,7 @@
             this.comboBoxLength2.Name = "comboBoxLength2";
             this.comboBoxLength2.Size = new System.Drawing.Size(80, 37);
             this.comboBoxLength2.TabIndex = 11;
+            this.comboBoxLength2.SelectedIndexChanged += new System.EventHandler(this.comboBoxLength2_SelectedIndexChanged);
             // 
             // textBoxLength2
             // 
@@ -677,6 +695,90 @@
             this.textBoxLength2.TabIndex = 12;
             this.textBoxLength2.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
+            // pictureBox8
+            // 
+            this.pictureBox8.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox8.BackColor = System.Drawing.Color.White;
+            this.pictureBox8.Location = new System.Drawing.Point(31, 45);
+            this.pictureBox8.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(193, 38);
+            this.pictureBox8.TabIndex = 34;
+            this.pictureBox8.TabStop = false;
+            this.pictureBox8.Click += new System.EventHandler(this.pictureBox8_Click);
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox7.BackColor = System.Drawing.Color.White;
+            this.pictureBox7.Location = new System.Drawing.Point(351, 45);
+            this.pictureBox7.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(193, 38);
+            this.pictureBox7.TabIndex = 37;
+            this.pictureBox7.TabStop = false;
+            this.pictureBox7.Click += new System.EventHandler(this.pictureBox7_Click);
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox6.BackColor = System.Drawing.Color.White;
+            this.pictureBox6.Location = new System.Drawing.Point(31, 47);
+            this.pictureBox6.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(193, 38);
+            this.pictureBox6.TabIndex = 26;
+            this.pictureBox6.TabStop = false;
+            this.pictureBox6.Click += new System.EventHandler(this.pictureBox6_Click);
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox5.BackColor = System.Drawing.Color.White;
+            this.pictureBox5.Location = new System.Drawing.Point(351, 47);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(193, 38);
+            this.pictureBox5.TabIndex = 29;
+            this.pictureBox5.TabStop = false;
+            this.pictureBox5.Click += new System.EventHandler(this.pictureBox5_Click);
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox4.BackColor = System.Drawing.Color.White;
+            this.pictureBox4.Location = new System.Drawing.Point(31, 47);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(193, 38);
+            this.pictureBox4.TabIndex = 18;
+            this.pictureBox4.TabStop = false;
+            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox3.BackColor = System.Drawing.Color.White;
+            this.pictureBox3.Location = new System.Drawing.Point(351, 47);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(193, 38);
+            this.pictureBox3.TabIndex = 21;
+            this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.pictureBox1.BackColor = System.Drawing.Color.White;
+            this.pictureBox1.Location = new System.Drawing.Point(31, 93);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(193, 38);
+            this.pictureBox1.TabIndex = 10;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
             // pictureBox2
             // 
             this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.Top;
@@ -686,6 +788,7 @@
             this.pictureBox2.Size = new System.Drawing.Size(290, 59);
             this.pictureBox2.TabIndex = 13;
             this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // Form2
             // 
@@ -700,22 +803,22 @@
             this.Controls.Add(this.panel1);
             this.Name = "Form2";
             this.Text = "Form2";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel5.ResumeLayout(false);
             this.panel9.ResumeLayout(false);
             this.panel9.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             this.panel8.ResumeLayout(false);
             this.panel8.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

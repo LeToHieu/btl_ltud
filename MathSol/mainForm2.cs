@@ -151,20 +151,35 @@ namespace MathSol
         private void btnArray_Click(object sender, EventArgs e)
         {
             showSubMenu(panelSubArray);
+            UpdateButtonColors(sender as Button);
+            btnArray.BackColor = System.Drawing.Color.White;
+            btnArray.ForeColor = System.Drawing.Color.Red;
+            btnArray.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            btnArray.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
         }
 
         private void btnArrSort_Click(object sender, EventArgs e)
         {
+            Title.Text = "  " + btnArrSort.Text;
+            openChildForm(new Form3());
             hideSubMenu();
+            
+            
         }
 
         private void btnArrAvg_Click(object sender, EventArgs e)
         {
+            Title.Text ="  " + btnArrAvg.Text;
+            openChildForm(new Form4());
+            
             hideSubMenu();
         }
 
         private void btnSpaceArr_Click(object sender, EventArgs e)
         {
+            Title.Text = "  " + buttonSpaceArr.Text;
+            openChildForm(new Form5());
+
             hideSubMenu();
         }
 

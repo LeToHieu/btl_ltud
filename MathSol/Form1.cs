@@ -2,12 +2,13 @@
 using System;
 using System.Linq.Expressions;
 using System.Windows.Forms;
+using DocumentFormat.OpenXml.Spreadsheet;
 
 namespace MathSol
 {
     public partial class Form1 : Form
     {
-
+        double myAns = 0;
         public Form1()
         {
             InitializeComponent();
@@ -19,13 +20,21 @@ namespace MathSol
 
         private void buttonCal_Click(object sender, EventArgs e)
         {
-            outText.Text = "";
-            String myCalFunc = inputText.Text;
-            if (myCalFunc.Trim().Length == 0) { return; }
-             
-            double result = Normal_Caculation(myCalFunc);
-            outText.Text += result.ToString();
-                    
+            try
+            {
+                outText.Text = "";
+                String myCalFunc = inputText.Text;
+                if (myCalFunc.Trim().Length == 0) { return; }
+
+                double result = Normal_Caculation(myCalFunc);
+                myAns = result;
+                outText.Text += result.ToString();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Phương trình tính toán không hợp lệ.");
+            }
+
         }
 
         static int CalculateGCD(int a, int b)
@@ -101,6 +110,10 @@ namespace MathSol
                         // Directly handle the square operator
                         output.Enqueue("3");
                         operators.Push('^');
+                    }else if(c== 'π')
+                    {
+                        output.Enqueue("3.14");
+                        
                     }
                     else if (IsOperator(c))
                     {
@@ -338,7 +351,14 @@ namespace MathSol
 
         private void buttonPi_Click(object sender, EventArgs e)
         {
-
+            InsertTextAtCursor(inputText, "3.14");
         }
+
+        private void buttonANS_Click(object sender, EventArgs e)
+        {
+            InsertTextAtCursor(inputText, myAns.ToString());
+        }
+
+        
     }
 }
