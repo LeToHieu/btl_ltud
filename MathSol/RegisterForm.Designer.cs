@@ -52,10 +52,10 @@
             this.BackToLogin.AutoSize = true;
             this.BackToLogin.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BackToLogin.ForeColor = System.Drawing.Color.Red;
-            this.BackToLogin.Location = new System.Drawing.Point(218, 1147);
-            this.BackToLogin.Margin = new System.Windows.Forms.Padding(3, 0, 3, 50);
+            this.BackToLogin.Location = new System.Drawing.Point(145, 734);
+            this.BackToLogin.Margin = new System.Windows.Forms.Padding(2, 0, 2, 32);
             this.BackToLogin.Name = "BackToLogin";
-            this.BackToLogin.Size = new System.Drawing.Size(223, 29);
+            this.BackToLogin.Size = new System.Drawing.Size(136, 18);
             this.BackToLogin.TabIndex = 18;
             this.BackToLogin.Text = "Quay lại Đăng nhập";
             this.BackToLogin.Click += new System.EventHandler(this.BackLogin_Click);
@@ -66,9 +66,10 @@
             this.haveAccount.AutoSize = true;
             this.haveAccount.Font = new System.Drawing.Font("Tahoma", 8.25F);
             this.haveAccount.ForeColor = System.Drawing.Color.LightSlateGray;
-            this.haveAccount.Location = new System.Drawing.Point(220, 1109);
+            this.haveAccount.Location = new System.Drawing.Point(147, 710);
+            this.haveAccount.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.haveAccount.Name = "haveAccount";
-            this.haveAccount.Size = new System.Drawing.Size(217, 27);
+            this.haveAccount.Size = new System.Drawing.Size(136, 17);
             this.haveAccount.TabIndex = 17;
             this.haveAccount.Text = "Bạn đã có tài khoản?";
             this.haveAccount.Click += new System.EventHandler(this.noAccount_Click);
@@ -80,10 +81,11 @@
             this.buttonRegister.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonRegister.Font = new System.Drawing.Font("Tahoma", 13.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonRegister.ForeColor = System.Drawing.Color.White;
-            this.buttonRegister.Location = new System.Drawing.Point(81, 938);
+            this.buttonRegister.Location = new System.Drawing.Point(54, 600);
+            this.buttonRegister.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonRegister.Name = "buttonRegister";
-            this.buttonRegister.Size = new System.Drawing.Size(496, 81);
-            this.buttonRegister.TabIndex = 22;
+            this.buttonRegister.Size = new System.Drawing.Size(331, 52);
+            this.buttonRegister.TabIndex = 19;
             this.buttonRegister.Text = "Đăng kí";
             this.buttonRegister.UseVisualStyleBackColor = false;
             this.buttonRegister.Click += new System.EventHandler(this.buttonRegister_Click);
@@ -95,11 +97,12 @@
             this.textBoxPassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxPassword.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxPassword.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.textBoxPassword.Location = new System.Drawing.Point(81, 591);
+            this.textBoxPassword.Location = new System.Drawing.Point(54, 378);
+            this.textBoxPassword.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBoxPassword.Multiline = true;
             this.textBoxPassword.Name = "textBoxPassword";
-            this.textBoxPassword.Size = new System.Drawing.Size(496, 59);
-            this.textBoxPassword.TabIndex = 15;
+            this.textBoxPassword.Size = new System.Drawing.Size(331, 38);
+            this.textBoxPassword.TabIndex = 17;
             // 
             // password
             // 
@@ -107,9 +110,10 @@
             this.password.AutoSize = true;
             this.password.Font = new System.Drawing.Font("Tahoma", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.password.ForeColor = System.Drawing.Color.Red;
-            this.password.Location = new System.Drawing.Point(78, 548);
+            this.password.Location = new System.Drawing.Point(52, 351);
+            this.password.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.password.Name = "password";
-            this.password.Size = new System.Drawing.Size(124, 33);
+            this.password.Size = new System.Drawing.Size(78, 21);
             this.password.TabIndex = 14;
             this.password.Text = "Mật khẩu";
             // 
@@ -120,11 +124,12 @@
             this.textBoxUsername.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxUsername.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxUsername.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.textBoxUsername.Location = new System.Drawing.Point(81, 452);
+            this.textBoxUsername.Location = new System.Drawing.Point(54, 289);
+            this.textBoxUsername.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBoxUsername.Multiline = true;
             this.textBoxUsername.Name = "textBoxUsername";
-            this.textBoxUsername.Size = new System.Drawing.Size(496, 59);
-            this.textBoxUsername.TabIndex = 13;
+            this.textBoxUsername.Size = new System.Drawing.Size(331, 38);
+            this.textBoxUsername.TabIndex = 16;
             // 
             // Username
             // 
@@ -132,9 +137,10 @@
             this.Username.AutoSize = true;
             this.Username.Font = new System.Drawing.Font("Tahoma", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Username.ForeColor = System.Drawing.Color.Red;
-            this.Username.Location = new System.Drawing.Point(78, 408);
+            this.Username.Location = new System.Drawing.Point(52, 261);
+            this.Username.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Username.Name = "Username";
-            this.Username.Size = new System.Drawing.Size(194, 33);
+            this.Username.Size = new System.Drawing.Size(121, 21);
             this.Username.TabIndex = 12;
             this.Username.Text = "Tên đăng nhập";
             // 
@@ -144,9 +150,10 @@
             this.CreateAccount.AutoSize = true;
             this.CreateAccount.Font = new System.Drawing.Font("Tahoma", 19.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CreateAccount.ForeColor = System.Drawing.Color.Red;
-            this.CreateAccount.Location = new System.Drawing.Point(72, 148);
+            this.CreateAccount.Location = new System.Drawing.Point(48, 95);
+            this.CreateAccount.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.CreateAccount.Name = "CreateAccount";
-            this.CreateAccount.Size = new System.Drawing.Size(391, 64);
+            this.CreateAccount.Size = new System.Drawing.Size(249, 41);
             this.CreateAccount.TabIndex = 11;
             this.CreateAccount.Text = "Tạo tài khoản";
             // 
@@ -157,11 +164,12 @@
             this.textBoxPassword2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxPassword2.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxPassword2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.textBoxPassword2.Location = new System.Drawing.Point(81, 747);
+            this.textBoxPassword2.Location = new System.Drawing.Point(54, 478);
+            this.textBoxPassword2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBoxPassword2.Multiline = true;
             this.textBoxPassword2.Name = "textBoxPassword2";
-            this.textBoxPassword2.Size = new System.Drawing.Size(496, 59);
-            this.textBoxPassword2.TabIndex = 20;
+            this.textBoxPassword2.Size = new System.Drawing.Size(331, 38);
+            this.textBoxPassword2.TabIndex = 18;
             // 
             // ConfirmPass
             // 
@@ -169,9 +177,10 @@
             this.ConfirmPass.AutoSize = true;
             this.ConfirmPass.Font = new System.Drawing.Font("Tahoma", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ConfirmPass.ForeColor = System.Drawing.Color.Red;
-            this.ConfirmPass.Location = new System.Drawing.Point(78, 705);
+            this.ConfirmPass.Location = new System.Drawing.Point(52, 451);
+            this.ConfirmPass.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.ConfirmPass.Name = "ConfirmPass";
-            this.ConfirmPass.Size = new System.Drawing.Size(230, 33);
+            this.ConfirmPass.Size = new System.Drawing.Size(144, 21);
             this.ConfirmPass.TabIndex = 19;
             this.ConfirmPass.Text = "Nhập lại mật khẩu";
             this.ConfirmPass.Click += new System.EventHandler(this.label1_Click);
@@ -183,10 +192,11 @@
             this.textBoxFullName.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxFullName.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxFullName.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.textBoxFullName.Location = new System.Drawing.Point(81, 317);
+            this.textBoxFullName.Location = new System.Drawing.Point(54, 203);
+            this.textBoxFullName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBoxFullName.Multiline = true;
             this.textBoxFullName.Name = "textBoxFullName";
-            this.textBoxFullName.Size = new System.Drawing.Size(496, 59);
+            this.textBoxFullName.Size = new System.Drawing.Size(331, 38);
             this.textBoxFullName.TabIndex = 15;
             this.textBoxFullName.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
@@ -196,9 +206,10 @@
             this.FullName.AutoSize = true;
             this.FullName.Font = new System.Drawing.Font("Tahoma", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FullName.ForeColor = System.Drawing.Color.Red;
-            this.FullName.Location = new System.Drawing.Point(78, 273);
+            this.FullName.Location = new System.Drawing.Point(52, 175);
+            this.FullName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.FullName.Name = "FullName";
-            this.FullName.Size = new System.Drawing.Size(129, 33);
+            this.FullName.Size = new System.Drawing.Size(81, 21);
             this.FullName.TabIndex = 21;
             this.FullName.Text = "Họ và tên";
             this.FullName.Click += new System.EventHandler(this.label2_Click);
@@ -206,9 +217,10 @@
             // Error
             // 
             this.Error.Image = global::MathSol.Properties.Resources.icons8_error_90;
-            this.Error.Location = new System.Drawing.Point(87, 846);
+            this.Error.Location = new System.Drawing.Point(58, 541);
+            this.Error.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Error.Name = "Error";
-            this.Error.Size = new System.Drawing.Size(37, 27);
+            this.Error.Size = new System.Drawing.Size(25, 17);
             this.Error.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.Error.TabIndex = 24;
             this.Error.TabStop = false;
@@ -220,20 +232,21 @@
             this.PasswordError.AutoSize = true;
             this.PasswordError.Font = new System.Drawing.Font("Tahoma", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PasswordError.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.PasswordError.Location = new System.Drawing.Point(130, 848);
+            this.PasswordError.Location = new System.Drawing.Point(87, 543);
+            this.PasswordError.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.PasswordError.Name = "PasswordError";
-            this.PasswordError.Size = new System.Drawing.Size(343, 25);
+            this.PasswordError.Size = new System.Drawing.Size(224, 17);
             this.PasswordError.TabIndex = 23;
             this.PasswordError.Text = "Mật khẩu bạn nhập chưa chính xác";
             this.PasswordError.Visible = false;
             // 
             // RegisterForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(658, 1231);
+            this.ClientSize = new System.Drawing.Size(439, 675);
             this.Controls.Add(this.Error);
             this.Controls.Add(this.PasswordError);
             this.Controls.Add(this.textBoxFullName);
@@ -250,6 +263,7 @@
             this.Controls.Add(this.CreateAccount);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "RegisterForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Toán Cấp 1";

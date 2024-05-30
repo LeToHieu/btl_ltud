@@ -57,7 +57,7 @@ namespace MathSol
                 {
                     sum += item;
                 }
-                output_label.Text = "Tổng dãy số: " + sum + Environment.NewLine + Environment.NewLine;
+                output_label.Text = "Tổng dãy số: " + sum + Environment.NewLine;
 
                 output_label.Text += "Trung bình cộng dãy: " + (double)System.Math.Round(sum /arr.Length,2);
                 
@@ -78,6 +78,11 @@ namespace MathSol
         private void focusToDummy(object sender, EventArgs e)
         {
             dummy.Focus();
+        }
+
+        private void output_help_label_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
