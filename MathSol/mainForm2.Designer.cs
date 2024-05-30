@@ -22,6 +22,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(mainForm2));
             this.panelSideMenu = new System.Windows.Forms.Panel();
             this.panelSubGeometry = new System.Windows.Forms.Panel();
             this.btnArea = new System.Windows.Forms.Button();
@@ -36,24 +37,24 @@
             this.btnConverter = new System.Windows.Forms.Button();
             this.btnCal = new System.Windows.Forms.Button();
             this.panelLogo = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelChildForm = new System.Windows.Forms.Panel();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.panelTop = new System.Windows.Forms.Panel();
             this.labelName = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.circularPictureBox2 = new MathSol.CircularPictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.Title = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.circularPictureBox2 = new MathSol.CircularPictureBox();
             this.panelSideMenu.SuspendLayout();
             this.panelSubGeometry.SuspendLayout();
             this.panelSubArray.SuspendLayout();
             this.panelLogo.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panelTop.SuspendLayout();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.circularPictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.circularPictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // panelSideMenu
@@ -79,7 +80,7 @@
             this.panelSubGeometry.Controls.Add(this.btnArea);
             this.panelSubGeometry.Controls.Add(this.btnPerimeter);
             this.panelSubGeometry.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelSubGeometry.Location = new System.Drawing.Point(0, 396);
+            this.panelSubGeometry.Location = new System.Drawing.Point(0, 426);
             this.panelSubGeometry.Name = "panelSubGeometry";
             this.panelSubGeometry.Size = new System.Drawing.Size(250, 85);
             this.panelSubGeometry.TabIndex = 11;
@@ -131,7 +132,7 @@
             this.btnGeometry.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGeometry.ForeColor = System.Drawing.Color.White;
             this.btnGeometry.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnGeometry.Location = new System.Drawing.Point(0, 351);
+            this.btnGeometry.Location = new System.Drawing.Point(0, 381);
             this.btnGeometry.Name = "btnGeometry";
             this.btnGeometry.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
             this.btnGeometry.Size = new System.Drawing.Size(250, 45);
@@ -167,7 +168,7 @@
             this.panelSubArray.Controls.Add(this.btnArrAvg);
             this.panelSubArray.Controls.Add(this.btnArrSort);
             this.panelSubArray.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelSubArray.Location = new System.Drawing.Point(0, 227);
+            this.panelSubArray.Location = new System.Drawing.Point(0, 257);
             this.panelSubArray.Name = "panelSubArray";
             this.panelSubArray.Size = new System.Drawing.Size(250, 124);
             this.panelSubArray.TabIndex = 7;
@@ -238,7 +239,7 @@
             this.btnArray.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnArray.ForeColor = System.Drawing.Color.White;
             this.btnArray.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnArray.Location = new System.Drawing.Point(0, 182);
+            this.btnArray.Location = new System.Drawing.Point(0, 212);
             this.btnArray.Name = "btnArray";
             this.btnArray.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
             this.btnArray.Size = new System.Drawing.Size(250, 45);
@@ -258,7 +259,7 @@
             this.btnConverter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnConverter.ForeColor = System.Drawing.Color.White;
             this.btnConverter.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnConverter.Location = new System.Drawing.Point(0, 137);
+            this.btnConverter.Location = new System.Drawing.Point(0, 167);
             this.btnConverter.Name = "btnConverter";
             this.btnConverter.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
             this.btnConverter.Size = new System.Drawing.Size(250, 45);
@@ -278,7 +279,7 @@
             this.btnCal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCal.ForeColor = System.Drawing.Color.White;
             this.btnCal.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCal.Location = new System.Drawing.Point(0, 92);
+            this.btnCal.Location = new System.Drawing.Point(0, 122);
             this.btnCal.Name = "btnCal";
             this.btnCal.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
             this.btnCal.Size = new System.Drawing.Size(250, 45);
@@ -295,19 +296,9 @@
             this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelLogo.Location = new System.Drawing.Point(0, 0);
             this.panelLogo.Name = "panelLogo";
-            this.panelLogo.Size = new System.Drawing.Size(250, 92);
+            this.panelLogo.Size = new System.Drawing.Size(250, 122);
             this.panelLogo.TabIndex = 0;
             this.panelLogo.Paint += new System.Windows.Forms.PaintEventHandler(this.panelLogo_Paint);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::MathSol.Properties.Resources.logowhite;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(213, 89);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
             // 
             // panelChildForm
             // 
@@ -356,29 +347,6 @@
             this.panel1.TabIndex = 1;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
-            // circularPictureBox2
-            // 
-            this.circularPictureBox2.Cursor = System.Windows.Forms.Cursors.Default;
-            this.circularPictureBox2.Enabled = false;
-            this.circularPictureBox2.Image = global::MathSol.Properties.Resources.nd2;
-            this.circularPictureBox2.Location = new System.Drawing.Point(7, 5);
-            this.circularPictureBox2.Name = "circularPictureBox2";
-            this.circularPictureBox2.Size = new System.Drawing.Size(47, 47);
-            this.circularPictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.circularPictureBox2.TabIndex = 2;
-            this.circularPictureBox2.TabStop = false;
-            this.circularPictureBox2.Click += new System.EventHandler(this.circularPictureBox2_Click);
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox2.Location = new System.Drawing.Point(7, 9);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(47, 43);
-            this.pictureBox2.TabIndex = 4;
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.circularPictureBox2_Click);
-            // 
             // Title
             // 
             this.Title.BackColor = System.Drawing.Color.Transparent;
@@ -393,9 +361,42 @@
             this.Title.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.Title.Click += new System.EventHandler(this.labelTitle_Click);
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox2.Location = new System.Drawing.Point(7, 9);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(47, 43);
+            this.pictureBox2.TabIndex = 4;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.circularPictureBox2_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::MathSol.Properties.Resources.logowhite;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(244, 92);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
+            // circularPictureBox2
+            // 
+            this.circularPictureBox2.Cursor = System.Windows.Forms.Cursors.Default;
+            this.circularPictureBox2.Enabled = false;
+            this.circularPictureBox2.Image = global::MathSol.Properties.Resources.nd2;
+            this.circularPictureBox2.Location = new System.Drawing.Point(7, 5);
+            this.circularPictureBox2.Name = "circularPictureBox2";
+            this.circularPictureBox2.Size = new System.Drawing.Size(47, 47);
+            this.circularPictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.circularPictureBox2.TabIndex = 2;
+            this.circularPictureBox2.TabStop = false;
+            this.circularPictureBox2.Click += new System.EventHandler(this.circularPictureBox2_Click);
+            // 
             // mainForm2
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(934, 561);
@@ -403,19 +404,22 @@
             this.Controls.Add(this.panelTop);
             this.Controls.Add(this.panelSideMenu);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.MinimumSize = new System.Drawing.Size(950, 600);
             this.Name = "mainForm2";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Toán cấp 1";
+            this.Load += new System.EventHandler(this.mainForm2_Load);
             this.panelSideMenu.ResumeLayout(false);
             this.panelSubGeometry.ResumeLayout(false);
             this.panelSubArray.ResumeLayout(false);
             this.panelLogo.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panelTop.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.circularPictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.circularPictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }

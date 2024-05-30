@@ -171,15 +171,24 @@ namespace MathSol
         private void btnGeometry_Click(object sender, EventArgs e)
         {
             showSubMenu(panelSubGeometry);
+            UpdateButtonColors(sender as Button);
+            btnGeometry.BackColor = System.Drawing.Color.White;
+            btnGeometry.ForeColor = System.Drawing.Color.Red;
+            btnGeometry.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            btnGeometry.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
         }
 
         private void btnPerimeter_Click(object sender, EventArgs e)
         {
+            Title.Text = "  " + btnPerimeter.Text;
+            openChildForm(new Form6());
             hideSubMenu();
         }
 
         private void btnArea_Click(object sender, EventArgs e)
         {
+            Title.Text = "  " + btnArea.Text;
+            openChildForm(new Form7());
             hideSubMenu();
         }
 
@@ -201,6 +210,9 @@ namespace MathSol
             this.circularPictureBox2.ImageLocation = "Resources/" + image;
         }
 
+        private void mainForm2_Load(object sender, EventArgs e)
+        {
 
+        }
     }
 }
